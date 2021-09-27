@@ -1,0 +1,71 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.4.2 (swiftlang-1205.0.28.2 clang-1205.0.19.57)
+// swift-module-flags: -target arm64-apple-ios12.1 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name FIBPaymentSDK
+@_exported import FIBPaymentSDK
+import Foundation
+import Swift
+import UIKit
+public enum FIBApplicationType {
+  case personal
+  case business
+  case corporate
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension FIBApplicationType : Swift.Equatable {
+  public static func == (lhs: FIBPaymentSDK.FIBApplicationType, rhs: FIBPaymentSDK.FIBApplicationType) -> Swift.Bool
+}
+public enum PaymentStatusType : Swift.String {
+  case paid
+  case unpaid
+  case notFound
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @IBDesignable final public class PayWithFIBView : UIKit.UIView {
+  final public let button: UIKit.UIButton
+  @objc override final public func didMoveToWindow()
+  final public func configure(amount: Swift.Double, message: Swift.String?, delegate: FIBPaymentSDK.FIBPaymentManagerDelegate?)
+  final public func openFIB(_ fibApplication: FIBPaymentSDK.FIBApplicationType)
+  final public func checkPaymentStatus(paymentID: Swift.String, completion: @escaping (FIBPaymentSDK.PaymentStatusType?) -> Swift.Void)
+  @objc deinit
+}
+public enum APIError : Swift.Error {
+  case requestError(Swift.Error)
+  case apiResponseError(FIBPaymentSDK.APIResponseError)
+  case noData
+  case parsingError
+}
+public struct APIResponseError : Swift.Decodable {
+  public init(from decoder: Swift.Decoder) throws
+}
+public struct APIErrorBody : Swift.Decodable {
+  public init(from decoder: Swift.Decoder) throws
+}
+public protocol FIBPaymentManagerDelegate : AnyObject {
+  func paymentStarted(paymentID: Swift.String, fibApplications: [FIBPaymentSDK.FIBApplicationType])
+  func didReceive(error: FIBPaymentSDK.APIError)
+}
+public protocol FIBPaymentManagerType {
+  func startPayment(amount: Swift.Double, message: Swift.String?)
+  func openFIB(_ applicationType: FIBPaymentSDK.FIBApplicationType)
+  func checkPaymentStatus(paymentID: Swift.String, completion: @escaping ((FIBPaymentSDK.PaymentStatusType?) -> Swift.Void))
+  var delegate: FIBPaymentSDK.FIBPaymentManagerDelegate? { get set }
+}
+@_hasMissingDesignatedInitializers final public class FIBPaymentManager : FIBPaymentSDK.FIBPaymentManagerType {
+  weak final public var delegate: FIBPaymentSDK.FIBPaymentManagerDelegate?
+  public init()
+  final public func startPayment(amount: Swift.Double, message: Swift.String? = nil)
+  final public func openFIB(_ applicationType: FIBPaymentSDK.FIBApplicationType)
+  final public func checkPaymentStatus(paymentID: Swift.String, completion: @escaping ((FIBPaymentSDK.PaymentStatusType?) -> Swift.Void))
+  @objc deinit
+}
+extension FIBPaymentSDK.FIBApplicationType : Swift.Hashable {}
+extension FIBPaymentSDK.PaymentStatusType : Swift.Equatable {}
+extension FIBPaymentSDK.PaymentStatusType : Swift.Hashable {}
+extension FIBPaymentSDK.PaymentStatusType : Swift.RawRepresentable {}
