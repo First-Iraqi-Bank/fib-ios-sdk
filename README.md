@@ -55,7 +55,7 @@ then you will need to create an instance of PayWithFIBView:
 
 it has three parameters:
 1- `amount`: the amount of money that you would like the user to pay you.
-2- `message`: an optional string in which you can state some informations about your transaction.
+2- `message`: an optional string in which you can state some information about your transaction.
 3-`delegate`: it is an instance of type `FIBPaymentManagerDelegate?` which you need to conform to in order to be notified about some extra information on the transaction.
 
 `FIBPaymentManagerDelegate` has two methods which you can implement:
@@ -85,11 +85,11 @@ The error is of type `APIError` which is an `enum`  so that you can check what i
                                    
  this one is used to check the status of a specific payment, It has two parameters:
  
-`paymentID`: when you are trying to get the status of a payment whether it has been paid or still not, you need to check it using the paymentID, keep reading and you will learn how to get your hands the `paymentID`.
+`paymentID`: an ID which is used to indicate which transaction you need to check.
 
 `completion`: which gives you a feedback about the status.
 
-PayWithFIBView has an instance of `UIButton` which you can customize for example like that:
+`PayWithFIBView` has an instance of `UIButton` which you can customize for example like that:
 
 `fibView.button.setTitle(“any” custom title, for: .normal)`, and also you can assign the logic for handling payment with `FIB` your self, Incase you want to use the `SDK` but you want to use your won UI, we got your back:
 
@@ -122,8 +122,9 @@ This is responsible for opening the fib apps based on you input, it has one para
                             completion: @escaping ((PaymentStatusType?) -> Void))`
 
  this one is used to check the status of a specific payment, It has two parameters:
-1- `paymentID`: when you are trying to get the status of a payment whether it has been paid or still not you need to check it using the `paymentID`.
-2-`completion`: which gives you a feedback about the status.
+
+  a- `paymentID`: an ID which is used to indicate which transaction you need to check.
+  b-`completion`: which gives you a feedback about the status.
 
 We have been mentioning the `paymentID` quite too much, but can you get you hands on that??
 
