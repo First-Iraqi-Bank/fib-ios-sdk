@@ -43,7 +43,9 @@ if you eant to integrate the SDK using SwiftPackageManager you just need to go t
 ## Usage
 To use the FIBPaymentSDK first you need to import it:
 
-`import FIBPaymentSDK`
+```ruby
+import FIBPaymentSDK
+```
 
 then you will need to create an instance of PayWithFIBView:
 
