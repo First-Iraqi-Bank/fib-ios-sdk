@@ -103,11 +103,15 @@ import FIBPaymentSDK
 
 then you will need to create an instance of PayWithFIBView:
 
-`let fibView =  PayWithFIBView()`
+```ruby
+let fibView =  PayWithFIBView()
+```
 
 `PayWithFIBView` has a method named `configure` which you can call to make the view intractable:
 
-`fibView. configure(amount: 5000, message: "any optional message", delegate: self)`
+```ruby
+fibView. configure(amount: 5000, message: "any optional message", delegate: self)
+```
 
 it has three parameters:
 1- `amount`: the amount of money that you would like the user to pay you.
@@ -116,7 +120,9 @@ it has three parameters:
 
 `FIBPaymentManagerDelegate` has two methods which you can implement:
 
-1- `func paymentStarted(paymentID: String, fibApplications: [FIBApplicationType])`
+1- ```ruby
+func paymentStarted(paymentID: String, fibApplications: [FIBApplicationType])
+```
 
 This method is called when you start FIB payment and it gives you some information about you transaction:
 
@@ -126,7 +132,9 @@ This method is called when you start FIB payment and it gives you some informati
 
 Note// when we say available application we don’t mean that the app is installed when for example the personal FIB app is not installed but you try to open personal app using the `FIBPaymentSDK` then you will be directed to the App Store page for the personal FIB app, actually by saying available fib app we mean the validity of the dynamicLinks used.
 
-2- `func didReceive(error: APIError):`
+2- ```ruby
+func didReceive(error: APIError):
+```
 
 This one will be called every time you want to start a FIB payment or check the status of a specific payment but an error occurs in the APIRequest for handling these cases you will need to implement this to deal with any `error` that might occur.
 
@@ -136,8 +144,10 @@ The error is of type `APIError` which is an `enum`  so that you can check what i
 
 `PayWithFIBView` has another method you can use and it is:
 
-`public func checkPaymentStatus(paymentID: String,
-                                   completion: @escaping (PaymentStatusType?) -> Void)`
+```ruby
+public func checkPaymentStatus(paymentID: String,
+                                   completion: @escaping (PaymentStatusType?) -> Void)
+```
                                    
  this one is used to check the status of a specific payment, It has two parameters:
  
@@ -147,35 +157,50 @@ The error is of type `APIError` which is an `enum`  so that you can check what i
 
 `PayWithFIBView` has an instance of `UIButton` which you can customize for example like that:
 
-`fibView.button.setTitle(“any” custom title, for: .normal)`, and also you can assign the logic for handling payment with `FIB` your self, Incase you want to use the `SDK` but you want to use your won UI, we got your back:
+```ruby
+fibView.button.setTitle(“any” custom title, for: .normal)
+```
+
+and also you can assign the logic for handling payment with `FIB` your self, Incase you want to use the `SDK` but you want to use your won UI, we got your back:
 
 we have created a class which you can use to handle all the logic but provide your own UI:
 
-`let fibPaymentManager: FIBPaymentManagerType
+```ruby
+let fibPaymentManager: FIBPaymentManagerType
 
 init(fibPaymentManager: FIBPaymentManagerType = FIBPaymentManager()) {
 self.fibPaymentManager = finPaymentManager
 fibPaymentManager.delegate = self
-}`
+}
+```
 
 As you see `FIBPaymentManagerType` is a protocol and `FIBPaymentManager` is the class that conforms to it, we have provided this protocol in order to make your life easier in terms of testability 😉.
 
 It has three methods which you will need to use:
 
-1- `func startPayment(amount: Double,
-                      message: String?)`
+1- 
+```ruby
+func startPayment(amount: Double,
+                      message: String?)
+```
+
 Call this method when you want to make the payment with `FIB`, it has two parameters:
 
   a- `amount`: the amount of money that you would like the user to pay you.
   b- `message`: an optional string in which you can state some information about your transaction.
 
-2- `func openFIB(_ applicationType: FIBApplicationType)`
+2- 
+```ruby 
+func openFIB(_ applicationType: FIBApplicationType)
+```
 This is responsible for opening the fib apps based on you input, it has one parameter:
 
   a- `applicationType`: you can pass `.personal` or `.business` or, `.corporate`, based on user’s input to you.
 
-3- `func checkPaymentStatus(paymentID: String,
-                            completion: @escaping ((PaymentStatusType?) -> Void))`
+3- 
+```rubyfunc checkPaymentStatus(paymentID: String,
+                            completion: @escaping ((PaymentStatusType?) -> Void))
+```
 
  this one is used to check the status of a specific payment, It has two parameters:
 
