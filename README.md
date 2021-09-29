@@ -52,17 +52,17 @@ replace the content of the SDK with:
 <plist version="1.0">
 <dict>
 	<key>accountId</key>
-	<string>`you will be given this ID`</string>
+	<string>you will be given this ID</string>
 	<key>clientSecret</key>
-	<string>`you will be given this secret`</string>
+	<string>you will be given this secret</string>
 	<key>clientId</key>
-	<string>`you will be given this ID`</string>
+	<string>you will be given this ID</string>
 	<key>grantType</key>
 	<string>client_credentials</string>
 	<key>baseURLs</key>
 	<dict>
 		<key>fibPayGate</key>
-		<string>`this URL with change based on your need`</string>
+		<string>this URL with change based on your need</string>
 	</dict>
 </dict>
 </plist>
@@ -70,17 +70,25 @@ replace the content of the SDK with:
 ```
 
 An overview of `FIBConfiguration.plist`:
+
 1-`accountId`: this is `accountId` of the FIB business account which receives the payments.
+
 2-`clientSecret`: an secret that you will be given to authenticate you.
+
 3-`clientId`: an Id that you will be given to identify you as a client.
+
 4-`grantType`: this is used for suthentication as well.
+
 5-`baseURLs`: the baseURLs that we use for making the API requests for creating the payment, currently it only has one property which is `fibPayGate`.
 
 the fibPayGate can be either:
+
 1- `sandbox`: which can be used for testing purposes.
+
 ```ruby
 https://fib.sandbox.azure.lawrence-spring.com
 ```
+
 2- `production`: which you will use when you release your app.
 
 ```ruby
