@@ -120,7 +120,8 @@ it has three parameters:
 
 `FIBPaymentManagerDelegate` has two methods which you can implement:
 
-1- ```ruby
+1- 
+```ruby
 func paymentStarted(paymentID: String, fibApplications: [FIBApplicationType])
 ```
 
@@ -132,7 +133,8 @@ This method is called when you start FIB payment and it gives you some informati
 
 Note// when we say available application we don’t mean that the app is installed when for example the personal FIB app is not installed but you try to open personal app using the `FIBPaymentSDK` then you will be directed to the App Store page for the personal FIB app, actually by saying available fib app we mean the validity of the dynamicLinks used.
 
-2- ```ruby
+2- 
+```ruby
 func didReceive(error: APIError):
 ```
 
@@ -198,7 +200,8 @@ This is responsible for opening the fib apps based on you input, it has one para
   a- `applicationType`: you can pass `.personal` or `.business` or, `.corporate`, based on user’s input to you.
 
 3- 
-```rubyfunc checkPaymentStatus(paymentID: String,
+```ruby
+func checkPaymentStatus(paymentID: String,
                             completion: @escaping ((PaymentStatusType?) -> Void))
 ```
 
