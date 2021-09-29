@@ -41,7 +41,53 @@ FIB Payment SDK is a payment library using First Iraqi Bank App written in Swift
 if you eant to integrate the SDK using SwiftPackageManager you just need to go to `File -> Swift Packages -> Add Package Dependency...` then in the search write `https://github.com/First-Iraqi-Bank/fib-ios-sdk.git`, the url for this github repository, then choose the version or the branch of interest.
 
 ## Usage
-To use the FIBPaymentSDK first you need to import it:
+The first thing you will need to do if you want to use this SDK is creating a propertyList in your app with exactly this name:
+`FIBConfiguration.plist`
+this file contains the required data for the sdk to be able to work.
+replace the content of the SDK with:
+
+```ruby
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>accountId</key>
+	<string>`you will be given this ID`</string>
+	<key>clientSecret</key>
+	<string>`you will be given this secret`</string>
+	<key>clientId</key>
+	<string>`you will be given this ID`</string>
+	<key>grantType</key>
+	<string>client_credentials</string>
+	<key>baseURLs</key>
+	<dict>
+		<key>fibPayGate</key>
+		<string>`this URL with change based on your need`</string>
+	</dict>
+</dict>
+</plist>
+
+```
+
+An overview of `FIBConfiguration.plist`:
+1-`accountId`: this is `accountId` of the FIB business account which receives the payments.
+2-`clientSecret`: an secret that you will be given to authenticate you.
+3-`clientId`: an Id that you will be given to identify you as a client.
+4-`grantType`: this is used for suthentication as well.
+5-`baseURLs`: the baseURLs that we use for making the API requests for creating the payment, currently it only has one property which is `fibPayGate`.
+
+the fibPayGate can be either:
+1- `sandbox`: which can be used for testing purposes.
+```ruby
+https://fib.sandbox.azure.lawrence-spring.com
+```
+2- `production`: which you will use when you release your app.
+
+```ruby
+to be added
+```
+
+To use the FIBPaymentSDK you need to import it:
 
 ```ruby
 import FIBPaymentSDK
