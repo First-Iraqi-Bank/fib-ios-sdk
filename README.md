@@ -110,7 +110,7 @@ let fibView =  PayWithFIBView()
 `PayWithFIBView` has a method named `configure` which you can call to make the view intractable:
 
 ```ruby
-fibView. configure(amount: 5000, message: "any optional message", delegate: self)
+fibView.configure(amount: 5000, message: "any optional message", delegate: self)
 ```
 
 it has three parameters:
@@ -118,7 +118,7 @@ it has three parameters:
 2- `message`: an optional string in which you can state some information about your transaction.
 3-`delegate`: it is an instance of type `FIBPaymentManagerDelegate?` which you need to conform to in order to be notified about some extra information on the transaction.
 
-`FIBPaymentManagerDelegate` has two methods which you can implement:
+`FIBPaymentManagerDelegate` has three methods which you can implement:
 
 1- 
 ```ruby
@@ -134,6 +134,14 @@ This method is called when you start FIB payment and it gives you some informati
 Note// when we say available application we don’t mean that the app is installed when for example the personal FIB app is not installed but you try to open personal app using the `FIBPaymentSDK` then you will be directed to the App Store page for the personal FIB app, actually by saying available fib app we mean the validity of the dynamicLinks used.
 
 2- 
+
+```ruby
+func paymentCanceled():
+```
+
+this one is called when you cancel a spesific payment.
+
+3-
 ```ruby
 func didReceive(error: APIError):
 ```
@@ -141,6 +149,7 @@ func didReceive(error: APIError):
 This one will be called every time you want to start a FIB payment or check the status of a specific payment but an error occurs in the APIRequest for handling these cases you will need to implement this to deal with any `error` that might occur.
 
 The error is of type `APIError` which is an `enum`  so that you can check what is exactly the error and update you UI accordingly.
+
 
  Doing so you enable the `fibView` to make all the required functionalities and present and alert to indicate to the user that he/she can open the available FIB applications.
 
@@ -156,6 +165,14 @@ public func checkPaymentStatus(paymentID: String,
 `paymentID`: an ID which is used to indicate which transaction you need to check.
 
 `completion`: which gives you a feedback about the status.
+
+it has yet another method:
+
+```ruby
+func cancelPayment(paymentID: String)
+```
+
+you call this one when you want cancel a specisic payment.
 
 `PayWithFIBView` has an instance of `UIButton` which you can customize for example like that:
 
@@ -209,7 +226,12 @@ func checkPaymentStatus(paymentID: String,
 
   a- `paymentID`: an ID which is used to indicate which transaction you need to check.
   b-`completion`: which gives you a feedback about the status.
-
-We have been mentioning the `paymentID` quite too much, but can you get you hands on that??
+  
+4-
+```ruby
+ func cancelPayment(paymentID: String)
+ ```
+ 
+ you call this one when you want to cancel a specific payment.
 
 As you can see in the body of the`initializer`, `fibPaymentManager` has a property called `delegate` and it is of type `FIBPaymentManagerDelegate?` Which you need to conform to and implement its methods.
