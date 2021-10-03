@@ -172,7 +172,7 @@ it has yet another method:
 func cancelPayment(paymentID: String)
 ```
 
-you call this one when you want cancel a specisic payment.
+you call this one when you want to cancel a specific payment.
 
 `PayWithFIBView` has an instance of `UIButton` which you can customize for example like that:
 
