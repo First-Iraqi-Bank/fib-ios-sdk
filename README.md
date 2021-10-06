@@ -136,7 +136,7 @@ Note// when we say available application we don’t mean that the app is install
 2- 
 
 ```ruby
-func paymentCanceled():
+func paymentCanceled(paymentID: String):
 ```
 
 this one is called when you cancel a spesific payment.
