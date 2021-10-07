@@ -82,13 +82,13 @@ replace the content of the SDK with:
 
 <sub style="font-size:18px;">the fibPayGate can be either:</sub>
 
-<sub style="font-size:25px;">5.1. `sandbox`: which can be used for testing purposes.</sub>
+<sub style="font-size:25px;">  1. `sandbox`: which can be used for testing purposes.</sub>
 
 ```ruby
 https://fib.sandbox.azure.lawrence-spring.com
 ```
 
-<sub style="font-size:25px;">5.2. `production`: which you will use when you release your app.</sub>
+<sub style="font-size:25px;">  2. `production`: which you will use when you release your app.</sub>
 
 ```ruby
 to be added
@@ -96,52 +96,52 @@ to be added
 
 To use the FIBPaymentSDK you need to import it:
 
-```ruby
+```swift
 import FIBPaymentSDK
 ```
 
 then you will need to create an instance of PayWithFIBView:
 
-```ruby
+```swift
 let fibView =  PayWithFIBView()
 ```
 
 `PayWithFIBView` has a method named `configure` which you can call to make the view intractable:
 
-```ruby
+```swift
 fibView.configure(amount: 5000, message: "any optional message", delegate: self)
 ```
 
 it has three parameters:
-1- `amount`: the amount of money that you would like the user to pay you.
-2- `message`: an optional string in which you can state some information about your transaction.
-3-`delegate`: it is an instance of type `FIBPaymentManagerDelegate?` which you need to conform to in order to be notified about some extra information on the transaction.
+1. `amount`: the amount of money that you would like the user to pay you.
+2. `message`: an optional string in which you can state some information about your transaction.
+3.`delegate`: it is an instance of type `FIBPaymentManagerDelegate?` which you need to conform to in order to be notified about some extra information on the transaction.
 
 `FIBPaymentManagerDelegate` has three methods which you can implement:
 
-1- 
-```ruby
+1.
+```swift
 func paymentStarted(paymentID: String, fibApplications: [FIBApplicationType])
 ```
 
 This method is called when you start FIB payment and it gives you some information about you transaction:
 
-1- `paymentID`: here is the `paymentID`, you can store this ID to later check the status of your payment with it.
+1. `paymentID`: here is the `paymentID`, you can store this ID to later check the status of your payment with it.
 
-2- `fibApplications`: it is all available FIB apps which you can use to perform your transaction, it is an array of `FIBApplicationType` using this you can update your custom UI, for example if you want to use a `customView` as an `alert` here you will need to check the array to see which application can be opened in order to populate this `customView` with buttons for each application maybe.
+2. `fibApplications`: it is all available FIB apps which you can use to perform your transaction, it is an array of `FIBApplicationType` using this you can update your custom UI, for example if you want to use a `customView` as an `alert` here you will need to check the array to see which application can be opened in order to populate this `customView` with buttons for each application maybe.
 
 Note// when we say available application we don’t mean that the app is installed when for example the personal FIB app is not installed but you try to open personal app using the `FIBPaymentSDK` then you will be directed to the App Store page for the personal FIB app, actually by saying available fib app we mean the validity of the dynamicLinks used.
 
-2- 
+2.
 
-```ruby
+```swift
 func paymentCanceled(paymentID: String):
 ```
 
 this one is called when you cancel a spesific payment.
 
-3-
-```ruby
+3.
+```swift
 func didReceive(error: APIError):
 ```
 
@@ -154,7 +154,7 @@ The error is of type `APIError` which is an `enum`  so that you can check what i
 
 `PayWithFIBView` has another method you can use and it is:
 
-```ruby
+```swift
 public func checkPaymentStatus(paymentID: String,
                                    completion: @escaping (PaymentStatusType?) -> Void)
 ```
@@ -167,7 +167,7 @@ public func checkPaymentStatus(paymentID: String,
 
 it has yet another method:
 
-```ruby
+```swift
 func cancelPayment(paymentID: String)
 ```
 
@@ -175,7 +175,7 @@ you call this one when you want to cancel a specific payment.
 
 `PayWithFIBView` has an instance of `UIButton` which you can customize for example like that:
 
-```ruby
+```swift
 fibView.button.setTitle(“any” custom title, for: .normal)
 ```
 
@@ -183,7 +183,7 @@ and also you can assign the logic for handling payment with `FIB` your self, Inc
 
 we have created a class which you can use to handle all the logic but provide your own UI:
 
-```ruby
+```swift
 let fibPaymentManager: FIBPaymentManagerType
 
 init(fibPaymentManager: FIBPaymentManagerType = FIBPaymentManager()) {
@@ -192,12 +192,12 @@ fibPaymentManager.delegate = self
 }
 ```
 
-As you see `FIBPaymentManagerType` is a protocol and `FIBPaymentManager` is the class that conforms to it, we have provided this protocol in order to make your life easier in terms of testability 😉.
+As you see `FIBPaymentManagerType` is a protocol and `FIBPaymentManager` is the class that conforms to it, we have provided this protocol in order to make your life easier in terms of testability.
 
 It has three methods which you will need to use:
 
-1- 
-```ruby
+1.  
+```swift
 func startPayment(amount: Double,
                       message: String?)
 ```
@@ -207,16 +207,16 @@ Call this method when you want to make the payment with `FIB`, it has two parame
   a- `amount`: the amount of money that you would like the user to pay you.
   b- `message`: an optional string in which you can state some information about your transaction.
 
-2- 
-```ruby 
+2. 
+```swift 
 func openFIB(_ applicationType: FIBApplicationType)
 ```
 This is responsible for opening the fib apps based on you input, it has one parameter:
 
   a- `applicationType`: you can pass `.personal` or `.business` or, `.corporate`, based on user’s input to you.
 
-3- 
-```ruby
+3. 
+```swift
 func checkPaymentStatus(paymentID: String,
                             completion: @escaping ((PaymentStatusType?) -> Void))
 ```
@@ -226,8 +226,8 @@ func checkPaymentStatus(paymentID: String,
   a- `paymentID`: an ID which is used to indicate which transaction you need to check.
   b-`completion`: which gives you a feedback about the status.
   
-4-
-```ruby
+4.
+```swift
  func cancelPayment(paymentID: String)
  ```
  
