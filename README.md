@@ -1,4 +1,4 @@
-# fib-ios-sdk
+# First Iraqi bank FIBPaymentSDK
 
 <p align="center">
 <a href="https://cocoapods.org/pods/FIBPaymentSDK" alt="FIBPaymentSDK on CocoaPods" title="FIBPaymentSDK on CocoaPods"><img src="https://img.shields.io/cocoapods/v/RxSwift.svg" /></a>
@@ -68,27 +68,28 @@ replace the content of the SDK with:
 </plist>
 
 ```
-<sub style="font-size:18px;">An overview of `FIBConfiguration.plist`:</sub>
 
-<sub style="font-size:18px;">1. `accountId`: this is `accountId` of the FIB business account which receives the payments.</sub>
+An overview of `FIBConfiguration.plist`:
 
-<sub style="font-size:18px;">2. `clientSecret`: an secret that you will be given to authenticate you.</sub>
+1. `accountId`: this is `accountId` of the FIB business account which receives the payments.
 
-<sub style="font-size:18px;">3. `clientId`: an Id that you will be given to identify you as a client.</sub>
+2. `clientSecret`: an secret that you will be given to authenticate you.
 
-<sub style="font-size:18px;">4. `grantType`: this is used for suthentication as well.</sub>
+3. `clientId`: an Id that you will be given to identify you as a client.
 
-<sub style="font-size:18px;">5. `baseURLs`: the baseURLs that we use for making the API requests for creating the payment, currently it only has one property which is `fibPayGate`.</sub>
+4. `grantType`: this is used for suthentication as well.
 
-<sub style="font-size:18px;">the fibPayGate can be either:</sub>
+5. `baseURLs`: the baseURLs that we use for making the API requests for creating the payment, currently it only has one property which is `fibPayGate`.
 
-<sub style="font-size:25px;">  1. `sandbox`: which can be used for testing purposes.</sub>
+the fibPayGate can be either:
+
+  1. `sandbox`: which can be used for testing purposes.
 
 ```ruby
 https://fib.sandbox.azure.lawrence-spring.com
 ```
 
-<sub style="font-size:25px;">  2. `production`: which you will use when you release your app.</sub>
+2. `production`: which you will use when you release your app.
 
 ```ruby
 to be added
