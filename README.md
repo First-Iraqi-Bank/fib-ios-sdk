@@ -68,8 +68,8 @@ replace the content of the SDK with:
 </plist>
 
 ```
-
-An overview of `FIBConfiguration.plist`:
+<sub><sup>
+	An overview of `FIBConfiguration.plist`:
 
 1-`accountId`: this is `accountId` of the FIB business account which receives the payments.
 
@@ -94,6 +94,7 @@ https://fib.sandbox.azure.lawrence-spring.com
 ```ruby
 to be added
 ```
+	</sup></sub>
 
 To use the FIBPaymentSDK you need to import it:
 
