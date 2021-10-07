@@ -33,6 +33,7 @@ public enum PaymentStatusType : Swift.String {
   final public func configure(amount: Swift.Double, message: Swift.String?, delegate: FIBPaymentSDK.FIBPaymentManagerDelegate?)
   final public func openFIB(_ fibApplication: FIBPaymentSDK.FIBApplicationType)
   final public func checkPaymentStatus(paymentID: Swift.String, completion: @escaping (FIBPaymentSDK.PaymentStatusType?) -> Swift.Void)
+  final public func cancelPayment(paymentID: Swift.String)
   @objc deinit
 }
 public enum APIError : Swift.Error {
@@ -49,12 +50,14 @@ public struct APIErrorBody : Swift.Decodable {
 }
 public protocol FIBPaymentManagerDelegate : AnyObject {
   func paymentStarted(paymentID: Swift.String, fibApplications: [FIBPaymentSDK.FIBApplicationType])
+  func paymentCanceled(paymentID: Swift.String)
   func didReceive(error: FIBPaymentSDK.APIError)
 }
 public protocol FIBPaymentManagerType {
   func startPayment(amount: Swift.Double, message: Swift.String?)
   func openFIB(_ applicationType: FIBPaymentSDK.FIBApplicationType)
   func checkPaymentStatus(paymentID: Swift.String, completion: @escaping ((FIBPaymentSDK.PaymentStatusType?) -> Swift.Void))
+  func cancelPayment(paymentID: Swift.String)
   var delegate: FIBPaymentSDK.FIBPaymentManagerDelegate? { get set }
 }
 @_hasMissingDesignatedInitializers final public class FIBPaymentManager : FIBPaymentSDK.FIBPaymentManagerType {
@@ -63,6 +66,7 @@ public protocol FIBPaymentManagerType {
   final public func startPayment(amount: Swift.Double, message: Swift.String? = nil)
   final public func openFIB(_ applicationType: FIBPaymentSDK.FIBApplicationType)
   final public func checkPaymentStatus(paymentID: Swift.String, completion: @escaping ((FIBPaymentSDK.PaymentStatusType?) -> Swift.Void))
+  final public func cancelPayment(paymentID: Swift.String)
   @objc deinit
 }
 extension FIBPaymentSDK.FIBApplicationType : Swift.Hashable {}
