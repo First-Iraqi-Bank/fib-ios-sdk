@@ -170,8 +170,10 @@ it has yet another method:
 ```swift
 func cancelPayment(paymentID: String)
 ```
-
 you call this one when you want to cancel a specific payment.
+
+> Please note that Cancel Payment feature should not be used for refunding an item,
+> this feature should be used only to cancel a pending and currently active payment.
 
 `PayWithFIBView` has an instance of `UIButton` which you can customize for example like that:
 
