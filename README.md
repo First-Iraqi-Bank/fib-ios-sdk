@@ -82,16 +82,16 @@ replace the content of the SDK with:
 
 <sub style="font-size:18px;">the fibPayGate can be either:</sub>
 
-<sub style="font-size:18px;">5.1. `sandbox`: which can be used for testing purposes.</sub>
+<sub style="font-size:25px;">5.1. `sandbox`: which can be used for testing purposes.</sub>
 
 ```ruby
-<sub style="font-size:18px;">https://fib.sandbox.azure.lawrence-spring.com</sub>
+https://fib.sandbox.azure.lawrence-spring.com
 ```
 
-<sub style="font-size:18px;">5.2. `production`: which you will use when you release your app.</sub>
+<sub style="font-size:25px;">5.2. `production`: which you will use when you release your app.</sub>
 
 ```ruby
-<sub style="font-size:18px;">to be added</sub>
+to be added
 ```
 
 To use the FIBPaymentSDK you need to import it:
