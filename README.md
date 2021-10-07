@@ -68,33 +68,31 @@ replace the content of the SDK with:
 </plist>
 
 ```
-<sub style="font-size:15px;">An overview of `FIBConfiguration.plist`:</sub>
+<sub style="font-size:18px;">An overview of `FIBConfiguration.plist`:</sub>
 
-<sub style="font-size:15px;"></sub>
-<sub style="font-size:15px;">1. `accountId`: this is `accountId` of the FIB business account which receives the payments.</sub>
+<sub style="font-size:18px;">1. `accountId`: this is `accountId` of the FIB business account which receives the payments.</sub>
 
-<sub style="font-size:15px;">2.`clientSecret`: an secret that you will be given to authenticate you.</sub>
+<sub style="font-size:18px;">2. `clientSecret`: an secret that you will be given to authenticate you.</sub>
 
-3-`clientId`: an Id that you will be given to identify you as a client.
+<sub style="font-size:18px;">3. `clientId`: an Id that you will be given to identify you as a client.</sub>
 
-4-`grantType`: this is used for suthentication as well.
+<sub style="font-size:18px;">4. `grantType`: this is used for suthentication as well.</sub>
 
-5-`baseURLs`: the baseURLs that we use for making the API requests for creating the payment, currently it only has one property which is `fibPayGate`.
+<sub style="font-size:18px;">5. `baseURLs`: the baseURLs that we use for making the API requests for creating the payment, currently it only has one property which is `fibPayGate`.</sub>
 
-the fibPayGate can be either:
+<sub style="font-size:18px;">the fibPayGate can be either:</sub>
 
-1- `sandbox`: which can be used for testing purposes.
-
-```ruby
-https://fib.sandbox.azure.lawrence-spring.com
-```
-
-2- `production`: which you will use when you release your app.
+<sub style="font-size:18px;">5.1. `sandbox`: which can be used for testing purposes.</sub>
 
 ```ruby
-to be added
+<sub style="font-size:18px;">https://fib.sandbox.azure.lawrence-spring.com</sub>
 ```
-	</sup></sub>
+
+<sub style="font-size:18px;">5.2. `production`: which you will use when you release your app.</sub>
+
+```ruby
+<sub style="font-size:18px;">to be added</sub>
+```
 
 To use the FIBPaymentSDK you need to import it:
 
