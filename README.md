@@ -68,12 +68,12 @@ replace the content of the SDK with:
 </plist>
 
 ```
-<sub style="color:blue;font-size:10px;">An overview of `FIBConfiguration.plist`:</sub>
+<sub style="font-size:15px;">An overview of `FIBConfiguration.plist`:</sub>
 
+<sub style="font-size:15px;"></sub>
+<sub style="font-size:15px;">1. `accountId`: this is `accountId` of the FIB business account which receives the payments.</sub>
 
-1-`accountId`: this is `accountId` of the FIB business account which receives the payments.
-
-2-`clientSecret`: an secret that you will be given to authenticate you.
+<sub style="font-size:15px;">2.`clientSecret`: an secret that you will be given to authenticate you.</sub>
 
 3-`clientId`: an Id that you will be given to identify you as a client.
 
