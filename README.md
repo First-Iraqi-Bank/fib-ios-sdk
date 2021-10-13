@@ -49,6 +49,8 @@ replace the content of the SDK with:
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+        <key>statusCallbackURL</key>
+	<string>you must provide your payment status callback URL</string>
 	<key>accountId</key>
 	<string>you will be given this ID</string>
 	<key>clientSecret</key>
@@ -69,15 +71,17 @@ replace the content of the SDK with:
 
 An overview of `FIBConfiguration.plist`:
 
-1. `accountId`: this is `accountId` of the FIB business account which receives the payments.
+1. `statusCallbackURL`: you can provide this URL in order to receive the status of a specific payment instead of using the SDK's functionality for this purpose
 
-2. `clientSecret`: an secret that you will be given to authenticate you.
+2. `accountId`: this is `accountId` of the FIB business account which receives the payments.
 
-3. `clientId`: an Id that you will be given to identify you as a client.
+3. `clientSecret`: an secret that you will be given to authenticate you.
 
-4. `grantType`: this is used for suthentication as well.
+4. `clientId`: an Id that you will be given to identify you as a client.
 
-5. `baseURLs`: the baseURLs that we use for making the API requests for creating the payment, currently it only has one property which is `fibPayGate`.
+5. `grantType`: this is used for suthentication as well.
+
+6. `baseURLs`: the baseURLs that we use for making the API requests for creating the payment, currently it only has one property which is `fibPayGate`.
 
 the fibPayGate can be either:
 
