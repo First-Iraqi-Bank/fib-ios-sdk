@@ -26,11 +26,11 @@
 		</data>
 		<key>Modules/FIBPaymentSDK.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		l7otK2GEYO9jEkJiG6ImgAd0CoI=
+		n3hnD/uPN0BRGIgzCf8mR+tHhFM=
 		</data>
 		<key>Modules/FIBPaymentSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		z1Wm703Oti7wRHj//oA1wRoNFOE=
+		JiEBQA8WzEiygeQAJG+BzkThk9E=
 		</data>
 		<key>Modules/FIBPaymentSDK.swiftmodule/arm64.swiftdoc</key>
 		<data>
@@ -38,11 +38,11 @@
 		</data>
 		<key>Modules/FIBPaymentSDK.swiftmodule/arm64.swiftinterface</key>
 		<data>
-		l7otK2GEYO9jEkJiG6ImgAd0CoI=
+		n3hnD/uPN0BRGIgzCf8mR+tHhFM=
 		</data>
 		<key>Modules/FIBPaymentSDK.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		z1Wm703Oti7wRHj//oA1wRoNFOE=
+		JiEBQA8WzEiygeQAJG+BzkThk9E=
 		</data>
 		<key>Modules/FIBPaymentSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -50,11 +50,11 @@
 		</data>
 		<key>Modules/FIBPaymentSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		X9s/qR+Mni+VpTJ6qo3GmyKEkGA=
+		RR5pMkr2yZf5On/tEAVxjagB6NM=
 		</data>
 		<key>Modules/FIBPaymentSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		CO1UscoQKeV+SLUdYalPG7RWP84=
+		eCTHfFY6a/ZYz0CDyn9FY+secJA=
 		</data>
 		<key>Modules/FIBPaymentSDK.swiftmodule/x86_64.swiftdoc</key>
 		<data>
@@ -62,11 +62,11 @@
 		</data>
 		<key>Modules/FIBPaymentSDK.swiftmodule/x86_64.swiftinterface</key>
 		<data>
-		X9s/qR+Mni+VpTJ6qo3GmyKEkGA=
+		RR5pMkr2yZf5On/tEAVxjagB6NM=
 		</data>
 		<key>Modules/FIBPaymentSDK.swiftmodule/x86_64.swiftmodule</key>
 		<data>
-		CO1UscoQKeV+SLUdYalPG7RWP84=
+		eCTHfFY6a/ZYz0CDyn9FY+secJA=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -107,14 +107,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			cZhRCtqwqZPyEhsFi0VjWnGAGB0tXRtIizrLVbbYRcg=
+			XoE0ppoYEkR6I+8LxAWM2QTJesmyLBviSa46fXE9brk=
 			</data>
 		</dict>
 		<key>Modules/FIBPaymentSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			EiTrF0jKjgp6c5T6sB4S88TsaMqgnB0ZKtAVX6VAhQg=
+			sewzNwHtaCmSERNPntpQnno5ZhNCC7zoi8UYqx9oFac=
 			</data>
 		</dict>
 		<key>Modules/FIBPaymentSDK.swiftmodule/arm64.swiftdoc</key>
@@ -128,14 +128,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			cZhRCtqwqZPyEhsFi0VjWnGAGB0tXRtIizrLVbbYRcg=
+			XoE0ppoYEkR6I+8LxAWM2QTJesmyLBviSa46fXE9brk=
 			</data>
 		</dict>
 		<key>Modules/FIBPaymentSDK.swiftmodule/arm64.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			EiTrF0jKjgp6c5T6sB4S88TsaMqgnB0ZKtAVX6VAhQg=
+			sewzNwHtaCmSERNPntpQnno5ZhNCC7zoi8UYqx9oFac=
 			</data>
 		</dict>
 		<key>Modules/FIBPaymentSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -149,14 +149,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			j1I0vlhR6tmgs06r65KZN2Mb/Qs/exhexn6s/kwddZo=
+			Aske3TYJ8WltCMWu+TwoLJDhuyaWhkNpKLeu2cwWqFs=
 			</data>
 		</dict>
 		<key>Modules/FIBPaymentSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			2N1ny52geYQp/wrsJiH3P4PJqbqSdS3+/kKA4VxfOaA=
+			KaS3wWcAZHxZA7qtq3xJhV5u/2hKiVKuHQqDL1v3CPA=
 			</data>
 		</dict>
 		<key>Modules/FIBPaymentSDK.swiftmodule/x86_64.swiftdoc</key>
@@ -170,14 +170,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			j1I0vlhR6tmgs06r65KZN2Mb/Qs/exhexn6s/kwddZo=
+			Aske3TYJ8WltCMWu+TwoLJDhuyaWhkNpKLeu2cwWqFs=
 			</data>
 		</dict>
 		<key>Modules/FIBPaymentSDK.swiftmodule/x86_64.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			2N1ny52geYQp/wrsJiH3P4PJqbqSdS3+/kKA4VxfOaA=
+			KaS3wWcAZHxZA7qtq3xJhV5u/2hKiVKuHQqDL1v3CPA=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

@@ -20,7 +20,7 @@ extension FIBApplicationType : Swift.Equatable {
 public enum PaymentStatusType : Swift.String {
   case paid
   case unpaid
-  case notFound
+  case canceled
   public init?(rawValue: Swift.String)
   public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
