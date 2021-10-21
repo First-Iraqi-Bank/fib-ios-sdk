@@ -84,16 +84,16 @@ An overview of `FIBConfiguration.plist`:
 
 the fibPayGate can be either:
 
-  1. `sandbox`: which can be used for testing purposes.
+  1. `develop`: which can be used for testing purposes.
 
 ```ruby
-https://fib.sandbox.azure.lawrence-spring.com
+https://fib.dev.azure.lawrence-spring.com
 ```
 
 2. `production`: which you will use when you release your app.
 
 ```ruby
-to be added
+https://fib.prod.fib.iq
 ```
 
 To use the FIBPaymentSDK you need to import it:
