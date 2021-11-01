@@ -48,8 +48,6 @@ replace the content of the SDK with:
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-        <key>statusCallbackURL</key>
-	<string>you must provide your payment status callback URL</string>
 	<key>accountId</key>
 	<string>you will be given this ID</string>
 	<key>clientSecret</key>
@@ -70,17 +68,15 @@ replace the content of the SDK with:
 
 An overview of `FIBConfiguration.plist`:
 
-1. `statusCallbackURL`: you can provide this URL in order to receive the status of a specific payment instead of using the SDK's functionality for this purpose
+1. `accountId`: this is `accountId` of the FIB business account which receives the payments.
 
-2. `accountId`: this is `accountId` of the FIB business account which receives the payments.
+2. `clientSecret`: an secret that you will be given to authenticate you.
 
-3. `clientSecret`: an secret that you will be given to authenticate you.
+3. `clientId`: an Id that you will be given to identify you as a client.
 
-4. `clientId`: an Id that you will be given to identify you as a client.
+4. `grantType`: this is used for suthentication as well.
 
-5. `grantType`: this is used for suthentication as well.
-
-6. `baseURLs`: the baseURLs that we use for making the API requests for creating the payment, currently it only has one property which is `fibPayGate`.
+5. `baseURLs`: the baseURLs that we use for making the API requests for creating the payment, currently it only has one property which is `fibPayGate`.
 
 the fibPayGate can be either:
 
@@ -111,30 +107,17 @@ let fibView =  PayWithFIBView()
 `PayWithFIBView` has a method named `configure` which you can call to make the view intractable:
 
 ```swift
-fibView.configure(amount: 5000, message: "any optional message", delegate: self)
+configure(fibApplicationURLs: [FIBApplicationURLType],
+          delegate: FIBPaymentManagerDelegate?)
 ```
 
 it has three parameters:
-1. `amount`: the amount of money that you would like the user to pay you.
-2. `message`: an optional string in which you can state some information about your transaction.
-3.`delegate`: it is an instance of type `FIBPaymentManagerDelegate?` which you need to conform to in order to be notified about some extra information on the transaction.
+1. `fibApplicationURLs`: this is an Array of Type `FIBApplicationURLType`, so we expect all the links of the `FIB apps` to be sent to this method. 
+2.`delegate`: it is an instance of type `FIBPaymentManagerDelegate?` which you need to conform to in order to be notified about some extra information on the transaction.
 
 `FIBPaymentManagerDelegate` has three methods which you can implement:
 
 1.
-```swift
-func paymentStarted(paymentID: String, fibApplications: [FIBApplicationType])
-```
-
-This method is called when you start FIB payment and it gives you some information about you transaction:
-
-1. `paymentID`: here is the `paymentID`, you can store this ID to later check the status of your payment with it.
-
-2. `fibApplications`: it is all available FIB apps which you can use to perform your transaction, it is an array of `FIBApplicationType` using this you can update your custom UI, for example if you want to use a `customView` as an `alert` here you will need to check the array to see which application can be opened in order to populate this `customView` with buttons for each application maybe.
-
-Note// when we say available application we don’t mean that the app is installed when for example the personal FIB app is not installed but you try to open personal app using the `FIBPaymentSDK` then you will be directed to the App Store page for the personal FIB app, actually by saying available fib app we mean the validity of the dynamicLinks used.
-
-2.
 
 ```swift
 func paymentCanceled(paymentID: String):
@@ -142,7 +125,7 @@ func paymentCanceled(paymentID: String):
 
 this one is called when you cancel a spesific payment.
 
-3.
+2.
 ```swift
 func didReceive(error: APIError):
 ```
@@ -180,7 +163,7 @@ you call this one when you want to cancel a specific payment.
 `PayWithFIBView` has an instance of `UIButton` which you can customize for example like that:
 
 ```swift
-fibView.button.setTitle(“any” custom title, for: .normal)
+fibView.button.setTitle(“any custom title", for: .normal)
 ```
 
 and also you can assign the logic for handling payment with `FIB` your self, Incase you want to use the `SDK` but you want to use your won UI, we got your back:
@@ -200,26 +183,15 @@ As you see `FIBPaymentManagerType` is a protocol and `FIBPaymentManager` is the 
 
 It has three methods which you will need to use:
 
-1.  
-```swift
-func startPayment(amount: Double,
-                      message: String?)
-```
-
-Call this method when you want to make the payment with `FIB`, it has two parameters:
-
-  a- `amount`: the amount of money that you would like the user to pay you.
-  b- `message`: an optional string in which you can state some information about your transaction.
-
-2. 
+1. 
 ```swift 
-func openFIB(_ applicationType: FIBApplicationType)
+func openFIB(_ applicationType: FIBApplicationURLType)
 ```
 This is responsible for opening the fib apps based on you input, it has one parameter:
 
-  a- `applicationType`: you can pass `.personal` or `.business` or, `.corporate`, based on user’s input to you.
+  a- `applicationType`: you can pass `.personalURL("personal app link")` or `.businessURL("business app link")` or, `.corporateURL("corporate app link")`, based on user’s input to you.
 
-3. 
+2. 
 ```swift
 func checkPaymentStatus(paymentID: String,
                             completion: @escaping ((PaymentStatusType?) -> Void))
@@ -230,7 +202,7 @@ func checkPaymentStatus(paymentID: String,
   a- `paymentID`: an ID which is used to indicate which transaction you need to check.
   b-`completion`: which gives you a feedback about the status.
   
-4.
+3.
 ```swift
  func cancelPayment(paymentID: String)
  ```
