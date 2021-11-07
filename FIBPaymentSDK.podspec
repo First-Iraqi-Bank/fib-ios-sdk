@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
   spec.name          = 'FIBPaymentSDK'
-  spec.version       = '1.0.2'
+  spec.version       = '1.1.1'
   spec.platform     = :ios, "12.0"
   spec.license       = { :type => 'MIT' }
   spec.homepage      = 'https://github.com/First-Iraqi-Bank/fib-ios-sdk'
