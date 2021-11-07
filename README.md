@@ -31,7 +31,9 @@ FIB Payment SDK is a payment library using First Iraqi Bank App written in Swift
 
 it is a dependency manager for Cocoa projects. For usage and installation instructions, visit their website. To integrate `FIBPaymentSDK` into your Xcode project using CocoaPods, specify it in your `Podfile`:
 
-`will be implemented soon`
+``` ruby 
+pod 'FIBPaymentSDK'
+```
 
 ### [Swift Package Manager](https://github.com/apple/swift-package-manager)
 
