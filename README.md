@@ -11,6 +11,7 @@ FIB Payment SDK is a payment library using First Iraqi Bank App written in Swift
 - [Requirements](#requirements)
 - [Installation](#installation)
 - [Usage](#Usage)
+- [Redirection](#Redirection)
 
 ## Features
 - [x] Make payment transaction using FIB App.
@@ -85,7 +86,7 @@ the fibPayGate can be either:
   1. `develop`: which can be used for testing purposes.
 
 ```ruby
-https://fib.dev.azure.lawrence-spring.com
+https://fib.dev.fib.iq
 ```
 
 2. `production`: which you will use when you release your app.
@@ -212,3 +213,9 @@ func checkPaymentStatus(paymentID: String,
  you call this one when you want to cancel a specific payment.
 
 As you can see in the body of the`initializer`, `fibPaymentManager` has a property called `delegate` and it is of type `FIBPaymentManagerDelegate?` Which you need to conform to and implement its methods.
+
+## Redirection
+
+this SDK also includes an option to redirect the user from the FIB appllications to your application, you can provide the applications `redirect URI` and everyThing will be handled for you.
+
+it is optional to have this feature, so if you provide your `redirect URI`, the redirection happens otherwise the FIB applications behave as they normally would.
