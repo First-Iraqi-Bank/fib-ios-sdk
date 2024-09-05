@@ -61,8 +61,8 @@ replace the content of the SDK with:
 	<string>client_credentials</string>
 	<key>baseURLs</key>
 	<dict>
-		<key>fibPayGate</key>
-		<string>this URL with change based on your need</string>
+		<key>fibBackend</key>
+		<string>this URL might change based on your need</string>
 	</dict>
 </dict>
 </plist>
