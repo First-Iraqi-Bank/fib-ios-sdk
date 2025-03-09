@@ -51,8 +51,6 @@ replace the content of the SDK with:
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>accountId</key>
-	<string>you will be given this ID</string>
 	<key>clientSecret</key>
 	<string>you will be given this secret</string>
 	<key>clientId</key>
@@ -70,8 +68,6 @@ replace the content of the SDK with:
 ```
 
 An overview of `FIBConfiguration.plist`:
-
-1. `accountId`: this is `accountId` of the FIB business account which receives the payments.
 
 2. `clientSecret`: an secret that you will be given to authenticate you.
 
