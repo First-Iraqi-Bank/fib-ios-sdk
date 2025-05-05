@@ -1,11 +1,16 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.5.1 (swiftlang-1300.0.31.4 clang-1300.0.29.6)
-// swift-module-flags: -target arm64-apple-ios12.1-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name FIBPaymentSDK
+// swift-compiler-version: Apple Swift version 6.0 effective-5.10 (swiftlang-6.0.0.9.10 clang-1600.0.26.2)
+// swift-module-flags: -target x86_64-apple-ios12.1-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name FIBPaymentSDK
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface
+import DeveloperToolsSupport
 @_exported import FIBPaymentSDK
 import Foundation
 import Swift
+import SwiftUI
 import UIKit
 import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
 public enum FIBApplicationURLType : Swift.Hashable {
   case personalURL(Swift.String)
   case businessURL(Swift.String)
@@ -28,25 +33,25 @@ public enum PaymentStatusType : Swift.String {
     get
   }
 }
-@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @IBDesignable @_Concurrency.MainActor(unsafe) final public class PayWithFIBView : UIKit.UIView {
-  @_Concurrency.MainActor(unsafe) final public let button: UIKit.UIButton
-  @_Concurrency.MainActor(unsafe) @objc override final public func didMoveToWindow()
-  @_Concurrency.MainActor(unsafe) final public func configure(fibApplicationURLs: [FIBPaymentSDK.FIBApplicationURLType], delegate: FIBPaymentSDK.FIBPaymentManagerDelegate?)
-  @_Concurrency.MainActor(unsafe) final public func checkPaymentStatus(paymentID: Swift.String, completion: @escaping (FIBPaymentSDK.PaymentStatusType?) -> Swift.Void)
-  @_Concurrency.MainActor(unsafe) final public func cancelPayment(paymentID: Swift.String)
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @IBDesignable @_Concurrency.MainActor @preconcurrency final public class PayWithFIBView : UIKit.UIView {
+  @_Concurrency.MainActor @preconcurrency final public let button: UIKit.UIButton
+  @_Concurrency.MainActor @preconcurrency @objc override final public func didMoveToWindow()
+  @_Concurrency.MainActor @preconcurrency final public func configure(fibApplicationURLs: [FIBPaymentSDK.FIBApplicationURLType], delegate: (any FIBPaymentSDK.FIBPaymentManagerDelegate)?)
+  @_Concurrency.MainActor @preconcurrency final public func checkPaymentStatus(paymentID: Swift.String, completion: @escaping (FIBPaymentSDK.PaymentStatusType?) -> Swift.Void)
+  @_Concurrency.MainActor @preconcurrency final public func cancelPayment(paymentID: Swift.String)
   @objc deinit
 }
 public enum APIError : Swift.Error {
-  case requestError(Swift.Error)
+  case requestError(any Swift.Error)
   case apiResponseError(FIBPaymentSDK.APIResponseError)
   case noData
   case parsingError
 }
 public struct APIResponseError : Swift.Decodable {
-  public init(from decoder: Swift.Decoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 public struct APIErrorBody : Swift.Decodable {
-  public init(from decoder: Swift.Decoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 public protocol FIBPaymentManagerDelegate : AnyObject {
   func paymentCanceled(paymentID: Swift.String)
@@ -56,10 +61,10 @@ public protocol FIBPaymentManagerType {
   func openFIB(_ applicationType: FIBPaymentSDK.FIBApplicationURLType)
   func checkPaymentStatus(paymentID: Swift.String, completion: @escaping ((FIBPaymentSDK.PaymentStatusType?) -> Swift.Void))
   func cancelPayment(paymentID: Swift.String)
-  var delegate: FIBPaymentSDK.FIBPaymentManagerDelegate? { get set }
+  var delegate: (any FIBPaymentSDK.FIBPaymentManagerDelegate)? { get set }
 }
 @_hasMissingDesignatedInitializers final public class FIBPaymentManager : FIBPaymentSDK.FIBPaymentManagerType {
-  weak final public var delegate: FIBPaymentSDK.FIBPaymentManagerDelegate?
+  weak final public var delegate: (any FIBPaymentSDK.FIBPaymentManagerDelegate)?
   public init()
   final public func openFIB(_ applicationURLType: FIBPaymentSDK.FIBApplicationURLType)
   final public func checkPaymentStatus(paymentID: Swift.String, completion: @escaping ((FIBPaymentSDK.PaymentStatusType?) -> Swift.Void))

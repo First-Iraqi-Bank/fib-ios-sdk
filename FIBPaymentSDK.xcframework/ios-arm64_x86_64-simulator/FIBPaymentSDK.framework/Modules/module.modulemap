@@ -1,11 +1,11 @@
 framework module FIBPaymentSDK {
   umbrella header "FIBPaymentSDK.h"
-
   export *
+
   module * { export * }
 }
 
 module FIBPaymentSDK.Swift {
-    header "FIBPaymentSDK-Swift.h"
-    requires objc
+  header "FIBPaymentSDK-Swift.h"
+  requires objc
 }

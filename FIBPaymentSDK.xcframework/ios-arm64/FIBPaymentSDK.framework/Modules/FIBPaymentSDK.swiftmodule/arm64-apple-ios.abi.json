@@ -1,0 +1,2677 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "FIBPaymentSDK",
+    "printedName": "FIBPaymentSDK",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "FIBPaymentSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "FIBPaymentSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "FIBPaymentSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "FIBPaymentSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "FIBPaymentSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "FIBPaymentSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "FIBPaymentSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "FIBPaymentSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "FIBPaymentSDK"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "FIBApplicationURLType",
+        "printedName": "FIBApplicationURLType",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "personalURL",
+            "printedName": "personalURL",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(FIBPaymentSDK.FIBApplicationURLType.Type) -> (Swift.String) -> FIBPaymentSDK.FIBApplicationURLType",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.String) -> FIBPaymentSDK.FIBApplicationURLType",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "FIBApplicationURLType",
+                        "printedName": "FIBPaymentSDK.FIBApplicationURLType",
+                        "usr": "s:13FIBPaymentSDK21FIBApplicationURLTypeO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "FIBPaymentSDK.FIBApplicationURLType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "FIBApplicationURLType",
+                        "printedName": "FIBPaymentSDK.FIBApplicationURLType",
+                        "usr": "s:13FIBPaymentSDK21FIBApplicationURLTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:13FIBPaymentSDK21FIBApplicationURLTypeO11personalURLyACSScACmF",
+            "mangledName": "$s13FIBPaymentSDK21FIBApplicationURLTypeO11personalURLyACSScACmF",
+            "moduleName": "FIBPaymentSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "businessURL",
+            "printedName": "businessURL",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(FIBPaymentSDK.FIBApplicationURLType.Type) -> (Swift.String) -> FIBPaymentSDK.FIBApplicationURLType",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.String) -> FIBPaymentSDK.FIBApplicationURLType",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "FIBApplicationURLType",
+                        "printedName": "FIBPaymentSDK.FIBApplicationURLType",
+                        "usr": "s:13FIBPaymentSDK21FIBApplicationURLTypeO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "FIBPaymentSDK.FIBApplicationURLType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "FIBApplicationURLType",
+                        "printedName": "FIBPaymentSDK.FIBApplicationURLType",
+                        "usr": "s:13FIBPaymentSDK21FIBApplicationURLTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:13FIBPaymentSDK21FIBApplicationURLTypeO11businessURLyACSScACmF",
+            "mangledName": "$s13FIBPaymentSDK21FIBApplicationURLTypeO11businessURLyACSScACmF",
+            "moduleName": "FIBPaymentSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "corporateURL",
+            "printedName": "corporateURL",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(FIBPaymentSDK.FIBApplicationURLType.Type) -> (Swift.String) -> FIBPaymentSDK.FIBApplicationURLType",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.String) -> FIBPaymentSDK.FIBApplicationURLType",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "FIBApplicationURLType",
+                        "printedName": "FIBPaymentSDK.FIBApplicationURLType",
+                        "usr": "s:13FIBPaymentSDK21FIBApplicationURLTypeO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "FIBPaymentSDK.FIBApplicationURLType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "FIBApplicationURLType",
+                        "printedName": "FIBPaymentSDK.FIBApplicationURLType",
+                        "usr": "s:13FIBPaymentSDK21FIBApplicationURLTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:13FIBPaymentSDK21FIBApplicationURLTypeO12corporateURLyACSScACmF",
+            "mangledName": "$s13FIBPaymentSDK21FIBApplicationURLTypeO12corporateURLyACSScACmF",
+            "moduleName": "FIBPaymentSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "hashValue",
+            "printedName": "hashValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:13FIBPaymentSDK21FIBApplicationURLTypeO9hashValueSivp",
+            "mangledName": "$s13FIBPaymentSDK21FIBApplicationURLTypeO9hashValueSivp",
+            "moduleName": "FIBPaymentSDK",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13FIBPaymentSDK21FIBApplicationURLTypeO9hashValueSivg",
+                "mangledName": "$s13FIBPaymentSDK21FIBApplicationURLTypeO9hashValueSivg",
+                "moduleName": "FIBPaymentSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "hash",
+            "printedName": "hash(into:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Hasher",
+                "printedName": "Swift.Hasher",
+                "paramValueOwnership": "InOut",
+                "usr": "s:s6HasherV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13FIBPaymentSDK21FIBApplicationURLTypeO4hash4intoys6HasherVz_tF",
+            "mangledName": "$s13FIBPaymentSDK21FIBApplicationURLTypeO4hash4intoys6HasherVz_tF",
+            "moduleName": "FIBPaymentSDK",
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "==",
+            "printedName": "==(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "FIBApplicationURLType",
+                "printedName": "FIBPaymentSDK.FIBApplicationURLType",
+                "usr": "s:13FIBPaymentSDK21FIBApplicationURLTypeO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "FIBApplicationURLType",
+                "printedName": "FIBPaymentSDK.FIBApplicationURLType",
+                "usr": "s:13FIBPaymentSDK21FIBApplicationURLTypeO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13FIBPaymentSDK21FIBApplicationURLTypeO2eeoiySbAC_ACtFZ",
+            "mangledName": "$s13FIBPaymentSDK21FIBApplicationURLTypeO2eeoiySbAC_ACtFZ",
+            "moduleName": "FIBPaymentSDK",
+            "static": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:13FIBPaymentSDK21FIBApplicationURLTypeO",
+        "mangledName": "$s13FIBPaymentSDK21FIBApplicationURLTypeO",
+        "moduleName": "FIBPaymentSDK",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "FIBPaymentSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "FIBPaymentSDK"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "PaymentStatusType",
+        "printedName": "PaymentStatusType",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "paid",
+            "printedName": "paid",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(FIBPaymentSDK.PaymentStatusType.Type) -> FIBPaymentSDK.PaymentStatusType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PaymentStatusType",
+                    "printedName": "FIBPaymentSDK.PaymentStatusType",
+                    "usr": "s:13FIBPaymentSDK17PaymentStatusTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "FIBPaymentSDK.PaymentStatusType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PaymentStatusType",
+                        "printedName": "FIBPaymentSDK.PaymentStatusType",
+                        "usr": "s:13FIBPaymentSDK17PaymentStatusTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:13FIBPaymentSDK17PaymentStatusTypeO4paidyA2CmF",
+            "mangledName": "$s13FIBPaymentSDK17PaymentStatusTypeO4paidyA2CmF",
+            "moduleName": "FIBPaymentSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "unpaid",
+            "printedName": "unpaid",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(FIBPaymentSDK.PaymentStatusType.Type) -> FIBPaymentSDK.PaymentStatusType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PaymentStatusType",
+                    "printedName": "FIBPaymentSDK.PaymentStatusType",
+                    "usr": "s:13FIBPaymentSDK17PaymentStatusTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "FIBPaymentSDK.PaymentStatusType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PaymentStatusType",
+                        "printedName": "FIBPaymentSDK.PaymentStatusType",
+                        "usr": "s:13FIBPaymentSDK17PaymentStatusTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:13FIBPaymentSDK17PaymentStatusTypeO6unpaidyA2CmF",
+            "mangledName": "$s13FIBPaymentSDK17PaymentStatusTypeO6unpaidyA2CmF",
+            "moduleName": "FIBPaymentSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "canceled",
+            "printedName": "canceled",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(FIBPaymentSDK.PaymentStatusType.Type) -> FIBPaymentSDK.PaymentStatusType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PaymentStatusType",
+                    "printedName": "FIBPaymentSDK.PaymentStatusType",
+                    "usr": "s:13FIBPaymentSDK17PaymentStatusTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "FIBPaymentSDK.PaymentStatusType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PaymentStatusType",
+                        "printedName": "FIBPaymentSDK.PaymentStatusType",
+                        "usr": "s:13FIBPaymentSDK17PaymentStatusTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:13FIBPaymentSDK17PaymentStatusTypeO8canceledyA2CmF",
+            "mangledName": "$s13FIBPaymentSDK17PaymentStatusTypeO8canceledyA2CmF",
+            "moduleName": "FIBPaymentSDK"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(rawValue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "FIBPaymentSDK.PaymentStatusType?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PaymentStatusType",
+                    "printedName": "FIBPaymentSDK.PaymentStatusType",
+                    "usr": "s:13FIBPaymentSDK17PaymentStatusTypeO"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:13FIBPaymentSDK17PaymentStatusTypeO8rawValueACSgSS_tcfc",
+            "mangledName": "$s13FIBPaymentSDK17PaymentStatusTypeO8rawValueACSgSS_tcfc",
+            "moduleName": "FIBPaymentSDK",
+            "implicit": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "rawValue",
+            "printedName": "rawValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:13FIBPaymentSDK17PaymentStatusTypeO8rawValueSSvp",
+            "mangledName": "$s13FIBPaymentSDK17PaymentStatusTypeO8rawValueSSvp",
+            "moduleName": "FIBPaymentSDK",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13FIBPaymentSDK17PaymentStatusTypeO8rawValueSSvg",
+                "mangledName": "$s13FIBPaymentSDK17PaymentStatusTypeO8rawValueSSvg",
+                "moduleName": "FIBPaymentSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:13FIBPaymentSDK17PaymentStatusTypeO",
+        "mangledName": "$s13FIBPaymentSDK17PaymentStatusTypeO",
+        "moduleName": "FIBPaymentSDK",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "enumRawTypeName": "String",
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RawRepresentable",
+            "printedName": "RawRepresentable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "RawValue",
+                "printedName": "RawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:SY",
+            "mangledName": "$sSY"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "FIBPaymentSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "FIBPaymentSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "FIBPaymentSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "FIBPaymentSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "FIBPaymentSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "FIBPaymentSDK"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "PayWithFIBView",
+        "printedName": "PayWithFIBView",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "button",
+            "printedName": "button",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UIButton",
+                "printedName": "UIKit.UIButton",
+                "usr": "c:objc(cs)UIButton"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:13FIBPaymentSDK14PayWithFIBViewC6buttonSo8UIButtonCvp",
+            "mangledName": "$s13FIBPaymentSDK14PayWithFIBViewC6buttonSo8UIButtonCvp",
+            "moduleName": "FIBPaymentSDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "Preconcurrency",
+              "Custom",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIButton",
+                    "printedName": "UIKit.UIButton",
+                    "usr": "c:objc(cs)UIButton"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13FIBPaymentSDK14PayWithFIBViewC6buttonSo8UIButtonCvg",
+                "mangledName": "$s13FIBPaymentSDK14PayWithFIBViewC6buttonSo8UIButtonCvg",
+                "moduleName": "FIBPaymentSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "didMoveToWindow",
+            "printedName": "didMoveToWindow()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@FIBPaymentSDK@objc(cs)PayWithFIBView(im)didMoveToWindow",
+            "mangledName": "$s13FIBPaymentSDK14PayWithFIBViewC15didMoveToWindowyyF",
+            "moduleName": "FIBPaymentSDK",
+            "overriding": true,
+            "objc_name": "didMoveToWindow",
+            "declAttributes": [
+              "Final",
+              "ObjC",
+              "Preconcurrency",
+              "Custom",
+              "Override",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "configure",
+            "printedName": "configure(fibApplicationURLs:delegate:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[FIBPaymentSDK.FIBApplicationURLType]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "FIBApplicationURLType",
+                    "printedName": "FIBPaymentSDK.FIBApplicationURLType",
+                    "usr": "s:13FIBPaymentSDK21FIBApplicationURLTypeO"
+                  }
+                ],
+                "usr": "s:Sa"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(any FIBPaymentSDK.FIBPaymentManagerDelegate)?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "FIBPaymentManagerDelegate",
+                    "printedName": "any FIBPaymentSDK.FIBPaymentManagerDelegate",
+                    "usr": "s:13FIBPaymentSDK0A15ManagerDelegateP"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13FIBPaymentSDK14PayWithFIBViewC9configure18fibApplicationURLs8delegateySayAA21FIBApplicationURLTypeOG_AA0A15ManagerDelegate_pSgtF",
+            "mangledName": "$s13FIBPaymentSDK14PayWithFIBViewC9configure18fibApplicationURLs8delegateySayAA21FIBApplicationURLTypeOG_AA0A15ManagerDelegate_pSgtF",
+            "moduleName": "FIBPaymentSDK",
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom",
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "checkPaymentStatus",
+            "printedName": "checkPaymentStatus(paymentID:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(FIBPaymentSDK.PaymentStatusType?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "FIBPaymentSDK.PaymentStatusType?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PaymentStatusType",
+                        "printedName": "FIBPaymentSDK.PaymentStatusType",
+                        "usr": "s:13FIBPaymentSDK17PaymentStatusTypeO"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13FIBPaymentSDK14PayWithFIBViewC18checkPaymentStatus9paymentID10completionySS_yAA0gH4TypeOSgctF",
+            "mangledName": "$s13FIBPaymentSDK14PayWithFIBViewC18checkPaymentStatus9paymentID10completionySS_yAA0gH4TypeOSgctF",
+            "moduleName": "FIBPaymentSDK",
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom",
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "cancelPayment",
+            "printedName": "cancelPayment(paymentID:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13FIBPaymentSDK14PayWithFIBViewC13cancelPayment9paymentIDySS_tF",
+            "mangledName": "$s13FIBPaymentSDK14PayWithFIBViewC13cancelPayment9paymentIDySS_tF",
+            "moduleName": "FIBPaymentSDK",
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom",
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@FIBPaymentSDK@objc(cs)PayWithFIBView",
+        "mangledName": "$s13FIBPaymentSDK14PayWithFIBViewC",
+        "moduleName": "FIBPaymentSDK",
+        "declAttributes": [
+          "Preconcurrency",
+          "Custom",
+          "Final",
+          "AccessControl",
+          "IBDesignable",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)UIView",
+        "hasMissingDesignatedInitializers": true,
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "UIKit.UIView",
+          "UIKit.UIResponder",
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "UITraitChangeObservable",
+            "printedName": "UITraitChangeObservable",
+            "usr": "s:5UIKit23UITraitChangeObservableP",
+            "mangledName": "$s5UIKit23UITraitChangeObservableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "__DefaultCustomPlaygroundQuickLookable",
+            "printedName": "__DefaultCustomPlaygroundQuickLookable",
+            "usr": "s:s38__DefaultCustomPlaygroundQuickLookableP",
+            "mangledName": "$ss38__DefaultCustomPlaygroundQuickLookableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "FIBPaymentSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "FIBPaymentSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "FIBPaymentSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "FIBPaymentSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "FIBPaymentSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "FIBPaymentSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "FIBPaymentSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "FIBPaymentSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "FIBPaymentSDK"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "APIError",
+        "printedName": "APIError",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "requestError",
+            "printedName": "requestError",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(FIBPaymentSDK.APIError.Type) -> (any Swift.Error) -> FIBPaymentSDK.APIError",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(any Swift.Error) -> FIBPaymentSDK.APIError",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "APIError",
+                        "printedName": "FIBPaymentSDK.APIError",
+                        "usr": "s:13FIBPaymentSDK8APIErrorO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Error",
+                        "printedName": "any Swift.Error",
+                        "usr": "s:s5ErrorP"
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "FIBPaymentSDK.APIError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "APIError",
+                        "printedName": "FIBPaymentSDK.APIError",
+                        "usr": "s:13FIBPaymentSDK8APIErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:13FIBPaymentSDK8APIErrorO12requestErroryACs0E0_pcACmF",
+            "mangledName": "$s13FIBPaymentSDK8APIErrorO12requestErroryACs0E0_pcACmF",
+            "moduleName": "FIBPaymentSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "apiResponseError",
+            "printedName": "apiResponseError",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(FIBPaymentSDK.APIError.Type) -> (FIBPaymentSDK.APIResponseError) -> FIBPaymentSDK.APIError",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(FIBPaymentSDK.APIResponseError) -> FIBPaymentSDK.APIError",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "APIError",
+                        "printedName": "FIBPaymentSDK.APIError",
+                        "usr": "s:13FIBPaymentSDK8APIErrorO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "APIResponseError",
+                        "printedName": "FIBPaymentSDK.APIResponseError",
+                        "usr": "s:13FIBPaymentSDK16APIResponseErrorV"
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "FIBPaymentSDK.APIError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "APIError",
+                        "printedName": "FIBPaymentSDK.APIError",
+                        "usr": "s:13FIBPaymentSDK8APIErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:13FIBPaymentSDK8APIErrorO16apiResponseErroryAcA011APIResponseF0VcACmF",
+            "mangledName": "$s13FIBPaymentSDK8APIErrorO16apiResponseErroryAcA011APIResponseF0VcACmF",
+            "moduleName": "FIBPaymentSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "noData",
+            "printedName": "noData",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(FIBPaymentSDK.APIError.Type) -> FIBPaymentSDK.APIError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "APIError",
+                    "printedName": "FIBPaymentSDK.APIError",
+                    "usr": "s:13FIBPaymentSDK8APIErrorO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "FIBPaymentSDK.APIError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "APIError",
+                        "printedName": "FIBPaymentSDK.APIError",
+                        "usr": "s:13FIBPaymentSDK8APIErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:13FIBPaymentSDK8APIErrorO6noDatayA2CmF",
+            "mangledName": "$s13FIBPaymentSDK8APIErrorO6noDatayA2CmF",
+            "moduleName": "FIBPaymentSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "parsingError",
+            "printedName": "parsingError",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(FIBPaymentSDK.APIError.Type) -> FIBPaymentSDK.APIError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "APIError",
+                    "printedName": "FIBPaymentSDK.APIError",
+                    "usr": "s:13FIBPaymentSDK8APIErrorO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "FIBPaymentSDK.APIError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "APIError",
+                        "printedName": "FIBPaymentSDK.APIError",
+                        "usr": "s:13FIBPaymentSDK8APIErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:13FIBPaymentSDK8APIErrorO12parsingErroryA2CmF",
+            "mangledName": "$s13FIBPaymentSDK8APIErrorO12parsingErroryA2CmF",
+            "moduleName": "FIBPaymentSDK"
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:13FIBPaymentSDK8APIErrorO",
+        "mangledName": "$s13FIBPaymentSDK8APIErrorO",
+        "moduleName": "FIBPaymentSDK",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Error",
+            "printedName": "Error",
+            "usr": "s:s5ErrorP",
+            "mangledName": "$ss5ErrorP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "FIBPaymentSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "FIBPaymentSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "FIBPaymentSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "FIBPaymentSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "FIBPaymentSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "FIBPaymentSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "FIBPaymentSDK"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "APIResponseError",
+        "printedName": "APIResponseError",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "APIResponseError",
+                "printedName": "FIBPaymentSDK.APIResponseError",
+                "usr": "s:13FIBPaymentSDK16APIResponseErrorV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "any Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:13FIBPaymentSDK16APIResponseErrorV4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s13FIBPaymentSDK16APIResponseErrorV4fromACs7Decoder_p_tKcfc",
+            "moduleName": "FIBPaymentSDK",
+            "implicit": true,
+            "throwing": true,
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:13FIBPaymentSDK16APIResponseErrorV",
+        "mangledName": "$s13FIBPaymentSDK16APIResponseErrorV",
+        "moduleName": "FIBPaymentSDK",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "APIErrorBody",
+        "printedName": "APIErrorBody",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "APIErrorBody",
+                "printedName": "FIBPaymentSDK.APIErrorBody",
+                "usr": "s:13FIBPaymentSDK12APIErrorBodyV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "any Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:13FIBPaymentSDK12APIErrorBodyV4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s13FIBPaymentSDK12APIErrorBodyV4fromACs7Decoder_p_tKcfc",
+            "moduleName": "FIBPaymentSDK",
+            "implicit": true,
+            "throwing": true,
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:13FIBPaymentSDK12APIErrorBodyV",
+        "mangledName": "$s13FIBPaymentSDK12APIErrorBodyV",
+        "moduleName": "FIBPaymentSDK",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "FIBPaymentSDK"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "FIBPaymentManagerDelegate",
+        "printedName": "FIBPaymentManagerDelegate",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "paymentCanceled",
+            "printedName": "paymentCanceled(paymentID:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13FIBPaymentSDK0A15ManagerDelegateP15paymentCanceled0E2IDySS_tF",
+            "mangledName": "$s13FIBPaymentSDK0A15ManagerDelegateP15paymentCanceled0E2IDySS_tF",
+            "moduleName": "FIBPaymentSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : FIBPaymentSDK.FIBPaymentManagerDelegate>",
+            "sugared_genericSig": "<Self where Self : FIBPaymentSDK.FIBPaymentManagerDelegate>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "didReceive",
+            "printedName": "didReceive(error:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "APIError",
+                "printedName": "FIBPaymentSDK.APIError",
+                "usr": "s:13FIBPaymentSDK8APIErrorO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13FIBPaymentSDK0A15ManagerDelegateP10didReceive5erroryAA8APIErrorO_tF",
+            "mangledName": "$s13FIBPaymentSDK0A15ManagerDelegateP10didReceive5erroryAA8APIErrorO_tF",
+            "moduleName": "FIBPaymentSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : FIBPaymentSDK.FIBPaymentManagerDelegate>",
+            "sugared_genericSig": "<Self where Self : FIBPaymentSDK.FIBPaymentManagerDelegate>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:13FIBPaymentSDK0A15ManagerDelegateP",
+        "mangledName": "$s13FIBPaymentSDK0A15ManagerDelegateP",
+        "moduleName": "FIBPaymentSDK",
+        "genericSig": "<τ_0_0 : AnyObject>",
+        "sugared_genericSig": "<Self : AnyObject>",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "FIBPaymentManagerType",
+        "printedName": "FIBPaymentManagerType",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "openFIB",
+            "printedName": "openFIB(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "FIBApplicationURLType",
+                "printedName": "FIBPaymentSDK.FIBApplicationURLType",
+                "usr": "s:13FIBPaymentSDK21FIBApplicationURLTypeO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13FIBPaymentSDK0A11ManagerTypeP7openFIByyAA21FIBApplicationURLTypeOF",
+            "mangledName": "$s13FIBPaymentSDK0A11ManagerTypeP7openFIByyAA21FIBApplicationURLTypeOF",
+            "moduleName": "FIBPaymentSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : FIBPaymentSDK.FIBPaymentManagerType>",
+            "sugared_genericSig": "<Self where Self : FIBPaymentSDK.FIBPaymentManagerType>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "checkPaymentStatus",
+            "printedName": "checkPaymentStatus(paymentID:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(FIBPaymentSDK.PaymentStatusType?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "FIBPaymentSDK.PaymentStatusType?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PaymentStatusType",
+                        "printedName": "FIBPaymentSDK.PaymentStatusType",
+                        "usr": "s:13FIBPaymentSDK17PaymentStatusTypeO"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13FIBPaymentSDK0A11ManagerTypeP18checkPaymentStatus9paymentID10completionySS_yAA0fgD0OSgctF",
+            "mangledName": "$s13FIBPaymentSDK0A11ManagerTypeP18checkPaymentStatus9paymentID10completionySS_yAA0fgD0OSgctF",
+            "moduleName": "FIBPaymentSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : FIBPaymentSDK.FIBPaymentManagerType>",
+            "sugared_genericSig": "<Self where Self : FIBPaymentSDK.FIBPaymentManagerType>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "cancelPayment",
+            "printedName": "cancelPayment(paymentID:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13FIBPaymentSDK0A11ManagerTypeP13cancelPayment9paymentIDySS_tF",
+            "mangledName": "$s13FIBPaymentSDK0A11ManagerTypeP13cancelPayment9paymentIDySS_tF",
+            "moduleName": "FIBPaymentSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : FIBPaymentSDK.FIBPaymentManagerType>",
+            "sugared_genericSig": "<Self where Self : FIBPaymentSDK.FIBPaymentManagerType>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "delegate",
+            "printedName": "delegate",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(any FIBPaymentSDK.FIBPaymentManagerDelegate)?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "FIBPaymentManagerDelegate",
+                    "printedName": "any FIBPaymentSDK.FIBPaymentManagerDelegate",
+                    "usr": "s:13FIBPaymentSDK0A15ManagerDelegateP"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:13FIBPaymentSDK0A11ManagerTypeP8delegateAA0aC8Delegate_pSgvp",
+            "mangledName": "$s13FIBPaymentSDK0A11ManagerTypeP8delegateAA0aC8Delegate_pSgvp",
+            "moduleName": "FIBPaymentSDK",
+            "protocolReq": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "(any FIBPaymentSDK.FIBPaymentManagerDelegate)?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "FIBPaymentManagerDelegate",
+                        "printedName": "any FIBPaymentSDK.FIBPaymentManagerDelegate",
+                        "usr": "s:13FIBPaymentSDK0A15ManagerDelegateP"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13FIBPaymentSDK0A11ManagerTypeP8delegateAA0aC8Delegate_pSgvg",
+                "mangledName": "$s13FIBPaymentSDK0A11ManagerTypeP8delegateAA0aC8Delegate_pSgvg",
+                "moduleName": "FIBPaymentSDK",
+                "genericSig": "<τ_0_0 where τ_0_0 : FIBPaymentSDK.FIBPaymentManagerType>",
+                "sugared_genericSig": "<Self where Self : FIBPaymentSDK.FIBPaymentManagerType>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "(any FIBPaymentSDK.FIBPaymentManagerDelegate)?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "FIBPaymentManagerDelegate",
+                        "printedName": "any FIBPaymentSDK.FIBPaymentManagerDelegate",
+                        "usr": "s:13FIBPaymentSDK0A15ManagerDelegateP"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13FIBPaymentSDK0A11ManagerTypeP8delegateAA0aC8Delegate_pSgvs",
+                "mangledName": "$s13FIBPaymentSDK0A11ManagerTypeP8delegateAA0aC8Delegate_pSgvs",
+                "moduleName": "FIBPaymentSDK",
+                "genericSig": "<τ_0_0 where τ_0_0 : FIBPaymentSDK.FIBPaymentManagerType>",
+                "sugared_genericSig": "<Self where Self : FIBPaymentSDK.FIBPaymentManagerType>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13FIBPaymentSDK0A11ManagerTypeP8delegateAA0aC8Delegate_pSgvM",
+                "mangledName": "$s13FIBPaymentSDK0A11ManagerTypeP8delegateAA0aC8Delegate_pSgvM",
+                "moduleName": "FIBPaymentSDK",
+                "genericSig": "<τ_0_0 where τ_0_0 : FIBPaymentSDK.FIBPaymentManagerType>",
+                "sugared_genericSig": "<Self where Self : FIBPaymentSDK.FIBPaymentManagerType>",
+                "protocolReq": true,
+                "implicit": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:13FIBPaymentSDK0A11ManagerTypeP",
+        "mangledName": "$s13FIBPaymentSDK0A11ManagerTypeP",
+        "moduleName": "FIBPaymentSDK",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "FIBPaymentManager",
+        "printedName": "FIBPaymentManager",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "delegate",
+            "printedName": "delegate",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "WeakStorage",
+                "printedName": "(any FIBPaymentSDK.FIBPaymentManagerDelegate)?"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:13FIBPaymentSDK0A7ManagerC8delegateAA0aC8Delegate_pSgvp",
+            "mangledName": "$s13FIBPaymentSDK0A7ManagerC8delegateAA0aC8Delegate_pSgvp",
+            "moduleName": "FIBPaymentSDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "ReferenceOwnership",
+              "AccessControl"
+            ],
+            "ownership": 1,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "(any FIBPaymentSDK.FIBPaymentManagerDelegate)?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "FIBPaymentManagerDelegate",
+                        "printedName": "any FIBPaymentSDK.FIBPaymentManagerDelegate",
+                        "usr": "s:13FIBPaymentSDK0A15ManagerDelegateP"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13FIBPaymentSDK0A7ManagerC8delegateAA0aC8Delegate_pSgvg",
+                "mangledName": "$s13FIBPaymentSDK0A7ManagerC8delegateAA0aC8Delegate_pSgvg",
+                "moduleName": "FIBPaymentSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "(any FIBPaymentSDK.FIBPaymentManagerDelegate)?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "FIBPaymentManagerDelegate",
+                        "printedName": "any FIBPaymentSDK.FIBPaymentManagerDelegate",
+                        "usr": "s:13FIBPaymentSDK0A15ManagerDelegateP"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13FIBPaymentSDK0A7ManagerC8delegateAA0aC8Delegate_pSgvs",
+                "mangledName": "$s13FIBPaymentSDK0A7ManagerC8delegateAA0aC8Delegate_pSgvs",
+                "moduleName": "FIBPaymentSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13FIBPaymentSDK0A7ManagerC8delegateAA0aC8Delegate_pSgvM",
+                "mangledName": "$s13FIBPaymentSDK0A7ManagerC8delegateAA0aC8Delegate_pSgvM",
+                "moduleName": "FIBPaymentSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "FIBPaymentManager",
+                "printedName": "FIBPaymentSDK.FIBPaymentManager",
+                "usr": "s:13FIBPaymentSDK0A7ManagerC"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:13FIBPaymentSDK0A7ManagerCACycfc",
+            "mangledName": "$s13FIBPaymentSDK0A7ManagerCACycfc",
+            "moduleName": "FIBPaymentSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "openFIB",
+            "printedName": "openFIB(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "FIBApplicationURLType",
+                "printedName": "FIBPaymentSDK.FIBApplicationURLType",
+                "usr": "s:13FIBPaymentSDK21FIBApplicationURLTypeO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13FIBPaymentSDK0A7ManagerC7openFIByyAA21FIBApplicationURLTypeOF",
+            "mangledName": "$s13FIBPaymentSDK0A7ManagerC7openFIByyAA21FIBApplicationURLTypeOF",
+            "moduleName": "FIBPaymentSDK",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "checkPaymentStatus",
+            "printedName": "checkPaymentStatus(paymentID:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(FIBPaymentSDK.PaymentStatusType?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "FIBPaymentSDK.PaymentStatusType?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PaymentStatusType",
+                        "printedName": "FIBPaymentSDK.PaymentStatusType",
+                        "usr": "s:13FIBPaymentSDK17PaymentStatusTypeO"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13FIBPaymentSDK0A7ManagerC18checkPaymentStatus9paymentID10completionySS_yAA0eF4TypeOSgctF",
+            "mangledName": "$s13FIBPaymentSDK0A7ManagerC18checkPaymentStatus9paymentID10completionySS_yAA0eF4TypeOSgctF",
+            "moduleName": "FIBPaymentSDK",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "cancelPayment",
+            "printedName": "cancelPayment(paymentID:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13FIBPaymentSDK0A7ManagerC13cancelPayment9paymentIDySS_tF",
+            "mangledName": "$s13FIBPaymentSDK0A7ManagerC13cancelPayment9paymentIDySS_tF",
+            "moduleName": "FIBPaymentSDK",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:13FIBPaymentSDK0A7ManagerC",
+        "mangledName": "$s13FIBPaymentSDK0A7ManagerC",
+        "moduleName": "FIBPaymentSDK",
+        "declAttributes": [
+          "Final",
+          "AccessControl"
+        ],
+        "hasMissingDesignatedInitializers": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "FIBPaymentManagerType",
+            "printedName": "FIBPaymentManagerType",
+            "usr": "s:13FIBPaymentSDK0A11ManagerTypeP",
+            "mangledName": "$s13FIBPaymentSDK0A11ManagerTypeP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "FIBPaymentSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "FIBPaymentSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "FIBPaymentSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "DeveloperToolsSupport",
+        "printedName": "DeveloperToolsSupport",
+        "declKind": "Import",
+        "moduleName": "FIBPaymentSDK"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "DispatchQueue",
+        "printedName": "DispatchQueue",
+        "declKind": "Class",
+        "usr": "c:objc(cs)OS_dispatch_queue",
+        "moduleName": "Dispatch",
+        "isOpen": true,
+        "objc_name": "OS_dispatch_queue",
+        "declAttributes": [
+          "ObjC",
+          "SynthesizedProtocol",
+          "Sendable",
+          "HasMissingDesignatedInitializers",
+          "Dynamic"
+        ],
+        "superclassUsr": "c:objc(cs)OS_dispatch_object",
+        "isExternal": true,
+        "hasMissingDesignatedInitializers": true,
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "Dispatch.DispatchObject",
+          "os_object.OS_object",
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Scheduler",
+            "printedName": "Scheduler",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "SchedulerTimeType",
+                "printedName": "SchedulerTimeType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SchedulerTimeType",
+                    "printedName": "Dispatch.DispatchQueue.SchedulerTimeType",
+                    "usr": "s:So17OS_dispatch_queueC8DispatchE17SchedulerTimeTypeV"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeWitness",
+                "name": "SchedulerOptions",
+                "printedName": "SchedulerOptions",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SchedulerOptions",
+                    "printedName": "Dispatch.DispatchQueue.SchedulerOptions",
+                    "usr": "s:So17OS_dispatch_queueC8DispatchE16SchedulerOptionsV"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:7Combine9SchedulerP",
+            "mangledName": "$s7Combine9SchedulerP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "UIApplication",
+        "printedName": "UIApplication",
+        "declKind": "Class",
+        "usr": "c:objc(cs)UIApplication",
+        "moduleName": "UIKit",
+        "isOpen": true,
+        "intro_iOS": "2.0",
+        "objc_name": "UIApplication",
+        "declAttributes": [
+          "Preconcurrency",
+          "Available",
+          "ObjC",
+          "NonSendable",
+          "Custom",
+          "Dynamic"
+        ],
+        "superclassUsr": "c:objc(cs)UIResponder",
+        "isExternal": true,
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "UIKit.UIResponder",
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "UIWindow",
+        "printedName": "UIWindow",
+        "declKind": "Class",
+        "usr": "c:objc(cs)UIWindow",
+        "moduleName": "UIKit",
+        "isOpen": true,
+        "intro_iOS": "2.0",
+        "objc_name": "UIWindow",
+        "declAttributes": [
+          "Preconcurrency",
+          "Available",
+          "ObjC",
+          "NonSendable",
+          "Custom",
+          "Dynamic"
+        ],
+        "superclassUsr": "c:objc(cs)UIView",
+        "isExternal": true,
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "UIKit.UIView",
+          "UIKit.UIResponder",
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "UITraitChangeObservable",
+            "printedName": "UITraitChangeObservable",
+            "usr": "s:5UIKit23UITraitChangeObservableP",
+            "mangledName": "$s5UIKit23UITraitChangeObservableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "__DefaultCustomPlaygroundQuickLookable",
+            "printedName": "__DefaultCustomPlaygroundQuickLookable",
+            "usr": "s:s38__DefaultCustomPlaygroundQuickLookableP",
+            "mangledName": "$ss38__DefaultCustomPlaygroundQuickLookableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          }
+        ]
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/bakoabdullah\/Desktop\/FIB-Payment-SDK\/FIBPaymentSDK\/View\/FIBGradientView.swift",
+      "kind": "FloatLiteral",
+      "offset": 103,
+      "length": 5,
+      "value": "0.337"
+    },
+    {
+      "filePath": "\/Users\/bakoabdullah\/Desktop\/FIB-Payment-SDK\/FIBPaymentSDK\/View\/FIBGradientView.swift",
+      "kind": "FloatLiteral",
+      "offset": 117,
+      "length": 5,
+      "value": "0.722"
+    },
+    {
+      "filePath": "\/Users\/bakoabdullah\/Desktop\/FIB-Payment-SDK\/FIBPaymentSDK\/View\/FIBGradientView.swift",
+      "kind": "FloatLiteral",
+      "offset": 130,
+      "length": 5,
+      "value": "0.616"
+    },
+    {
+      "filePath": "\/Users\/bakoabdullah\/Desktop\/FIB-Payment-SDK\/FIBPaymentSDK\/View\/FIBGradientView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 144,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/bakoabdullah\/Desktop\/FIB-Payment-SDK\/FIBPaymentSDK\/View\/FIBGradientView.swift",
+      "kind": "FloatLiteral",
+      "offset": 265,
+      "length": 5,
+      "value": "0.012"
+    },
+    {
+      "filePath": "\/Users\/bakoabdullah\/Desktop\/FIB-Payment-SDK\/FIBPaymentSDK\/View\/FIBGradientView.swift",
+      "kind": "FloatLiteral",
+      "offset": 279,
+      "length": 5,
+      "value": "0.592"
+    },
+    {
+      "filePath": "\/Users\/bakoabdullah\/Desktop\/FIB-Payment-SDK\/FIBPaymentSDK\/View\/FIBGradientView.swift",
+      "kind": "FloatLiteral",
+      "offset": 292,
+      "length": 4,
+      "value": "0.62"
+    },
+    {
+      "filePath": "\/Users\/bakoabdullah\/Desktop\/FIB-Payment-SDK\/FIBPaymentSDK\/View\/FIBGradientView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 305,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/bakoabdullah\/Desktop\/FIB-Payment-SDK\/FIBPaymentSDK\/Network\/Model\/Token.swift",
+      "kind": "StringLiteral",
+      "offset": 171,
+      "length": 14,
+      "value": "\"access_token\""
+    },
+    {
+      "filePath": "\/Users\/bakoabdullah\/Desktop\/FIB-Payment-SDK\/FIBPaymentSDK\/Network\/Model\/Token.swift",
+      "kind": "StringLiteral",
+      "offset": 214,
+      "length": 15,
+      "value": "\"refresh_token\""
+    },
+    {
+      "filePath": "\/Users\/bakoabdullah\/Desktop\/FIB-Payment-SDK\/FIBPaymentSDK\/Network\/Model\/UserCredentials.swift",
+      "kind": "StringLiteral",
+      "offset": 201,
+      "length": 12,
+      "value": "\"grant_type\""
+    },
+    {
+      "filePath": "\/Users\/bakoabdullah\/Desktop\/FIB-Payment-SDK\/FIBPaymentSDK\/Network\/Model\/UserCredentials.swift",
+      "kind": "StringLiteral",
+      "offset": 238,
+      "length": 11,
+      "value": "\"client_id\""
+    },
+    {
+      "filePath": "\/Users\/bakoabdullah\/Desktop\/FIB-Payment-SDK\/FIBPaymentSDK\/Network\/Model\/UserCredentials.swift",
+      "kind": "StringLiteral",
+      "offset": 278,
+      "length": 15,
+      "value": "\"client_secret\""
+    },
+    {
+      "filePath": "\/Users\/bakoabdullah\/Desktop\/FIB-Payment-SDK\/FIBPaymentSDK\/Network\/Model\/PaymentStatus.swift",
+      "kind": "StringLiteral",
+      "offset": 75,
+      "length": 6,
+      "value": "\"PAID\""
+    },
+    {
+      "filePath": "\/Users\/bakoabdullah\/Desktop\/FIB-Payment-SDK\/FIBPaymentSDK\/Network\/Model\/PaymentStatus.swift",
+      "kind": "StringLiteral",
+      "offset": 100,
+      "length": 8,
+      "value": "\"UNPAID\""
+    },
+    {
+      "filePath": "\/Users\/bakoabdullah\/Desktop\/FIB-Payment-SDK\/FIBPaymentSDK\/Network\/Model\/PaymentStatus.swift",
+      "kind": "StringLiteral",
+      "offset": 129,
+      "length": 10,
+      "value": "\"DECLINED\""
+    },
+    {
+      "filePath": "\/Users\/bakoabdullah\/Desktop\/FIB-Payment-SDK\/FIBPaymentSDK\/View\/PayWithFIBView.swift",
+      "kind": "Array",
+      "offset": 323,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/bakoabdullah\/Desktop\/FIB-Payment-SDK\/FIBPaymentSDK\/View\/PayWithFIBView.swift",
+      "kind": "StringLiteral",
+      "offset": 519,
+      "length": 14,
+      "value": "\"Pay with FIB\""
+    },
+    {
+      "filePath": "\/Users\/bakoabdullah\/Desktop\/FIB-Payment-SDK\/FIBPaymentSDK\/View\/PayWithFIBView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 686,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/bakoabdullah\/Desktop\/FIB-Payment-SDK\/FIBPaymentSDK\/View\/PayWithFIBView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 695,
+      "length": 2,
+      "value": "24"
+    },
+    {
+      "filePath": "\/Users\/bakoabdullah\/Desktop\/FIB-Payment-SDK\/FIBPaymentSDK\/View\/PayWithFIBView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 707,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/bakoabdullah\/Desktop\/FIB-Payment-SDK\/FIBPaymentSDK\/View\/PayWithFIBView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 717,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/bakoabdullah\/Desktop\/FIB-Payment-SDK\/FIBPaymentSDK\/View\/PayWithFIBView.swift",
+      "kind": "StringLiteral",
+      "offset": 909,
+      "length": 10,
+      "value": "\"fib-icon\""
+    },
+    {
+      "filePath": "\/Users\/bakoabdullah\/Desktop\/FIB-Payment-SDK\/FIBPaymentSDK\/View\/PayWithFIBView.swift",
+      "kind": "StringLiteral",
+      "offset": 978,
+      "length": 18,
+      "value": "\"id.FIBPaymentSDK\""
+    },
+    {
+      "filePath": "\/Users\/bakoabdullah\/Desktop\/FIB-Payment-SDK\/FIBPaymentSDK\/Helper\/FIBAlertHandler.swift",
+      "kind": "Array",
+      "offset": 233,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/bakoabdullah\/Desktop\/FIB-Payment-SDK\/FIBPaymentSDKTests\/Fake\/PaymentCancelerFake.swift",
+      "kind": "IntegerLiteral",
+      "offset": 104,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/bakoabdullah\/Desktop\/FIB-Payment-SDK\/FIBPaymentSDK\/Network\/APIRequestData.swift",
+      "kind": "Dictionary",
+      "offset": 282,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/bakoabdullah\/Desktop\/FIB-Payment-SDK\/FIBPaymentSDK\/Model\/FIBAppConfiguration.swift",
+      "kind": "StringLiteral",
+      "offset": 586,
+      "length": 18,
+      "value": "\"FIBConfiguration\""
+    },
+    {
+      "filePath": "\/Users\/bakoabdullah\/Desktop\/FIB-Payment-SDK\/FIBPaymentSDK\/Model\/TransactionInformation.swift",
+      "kind": "StringLiteral",
+      "offset": 62,
+      "length": 5,
+      "value": "\"IQD\""
+    },
+    {
+      "filePath": "\/Users\/bakoabdullah\/Desktop\/FIB-Payment-SDK\/FIBPaymentSDK\/Model\/TransactionInformation.swift",
+      "kind": "StringLiteral",
+      "offset": 83,
+      "length": 5,
+      "value": "\"USD\""
+    },
+    {
+      "filePath": "\/Users\/bakoabdullah\/Desktop\/FIB-Payment-SDK\/FIBPaymentSDK\/Model\/TransactionInformation.swift",
+      "kind": "StringLiteral",
+      "offset": 104,
+      "length": 5,
+      "value": "\"EUR\""
+    },
+    {
+      "filePath": "\/Users\/bakoabdullah\/Library\/Developer\/Xcode\/DerivedData\/FIBPaymentSDK-ecpoocnvirwbcpduseieuaptvxhy\/Build\/Intermediates.noindex\/ArchiveIntermediates\/FIBPaymentSDK\/IntermediateBuildFilesPath\/FIBPaymentSDK.build\/Release-iphoneos\/FIBPaymentSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 728,
+      "length": 10,
+      "value": "\"fib-icon\""
+    }
+  ]
+}
