@@ -1,7 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.0 effective-5.10 (swiftlang-6.0.0.9.10 clang-1600.0.26.2)
-// swift-module-flags: -target arm64-apple-ios12.1-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name FIBPaymentSDK
-// swift-module-flags-ignorable: -no-verify-emitted-module-interface
+// swift-compiler-version: Apple Swift version 6.1.2 effective-5.10 (swiftlang-6.1.2.1.2 clang-1700.0.13.5)
+// swift-module-flags: -target arm64-apple-ios12.1-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name FIBPaymentSDK
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -interface-compiler-version 6.1.2
 import DeveloperToolsSupport
 @_exported import FIBPaymentSDK
 import Foundation
@@ -59,7 +59,7 @@ public protocol FIBPaymentManagerDelegate : AnyObject {
 }
 public protocol FIBPaymentManagerType {
   func openFIB(_ applicationType: FIBPaymentSDK.FIBApplicationURLType)
-  func checkPaymentStatus(paymentID: Swift.String, completion: @escaping ((FIBPaymentSDK.PaymentStatusType?) -> Swift.Void))
+  func checkPaymentStatus(paymentID: Swift.String, completion: @escaping (FIBPaymentSDK.PaymentStatusType?) -> Swift.Void)
   func cancelPayment(paymentID: Swift.String)
   var delegate: (any FIBPaymentSDK.FIBPaymentManagerDelegate)? { get set }
 }
@@ -67,7 +67,7 @@ public protocol FIBPaymentManagerType {
   weak final public var delegate: (any FIBPaymentSDK.FIBPaymentManagerDelegate)?
   public init()
   final public func openFIB(_ applicationURLType: FIBPaymentSDK.FIBApplicationURLType)
-  final public func checkPaymentStatus(paymentID: Swift.String, completion: @escaping ((FIBPaymentSDK.PaymentStatusType?) -> Swift.Void))
+  final public func checkPaymentStatus(paymentID: Swift.String, completion: @escaping (FIBPaymentSDK.PaymentStatusType?) -> Swift.Void)
   final public func cancelPayment(paymentID: Swift.String)
   @objc deinit
 }

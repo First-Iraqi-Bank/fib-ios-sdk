@@ -2199,6 +2199,20 @@
           },
           {
             "kind": "Conformance",
+            "name": "TaskExecutor",
+            "printedName": "TaskExecutor",
+            "usr": "s:Sch",
+            "mangledName": "$sSch"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Executor",
+            "printedName": "Executor",
+            "usr": "s:ScF",
+            "mangledName": "$sScF"
+          },
+          {
+            "kind": "Conformance",
             "name": "Scheduler",
             "printedName": "Scheduler",
             "children": [
@@ -2641,7 +2655,7 @@
     {
       "filePath": "\/Users\/bakoabdullah\/Desktop\/FIB-Payment-SDK\/FIBPaymentSDK\/Model\/FIBAppConfiguration.swift",
       "kind": "StringLiteral",
-      "offset": 586,
+      "offset": 553,
       "length": 18,
       "value": "\"FIBConfiguration\""
     },
